@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'worksans';
+  src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+* {
+  text-decoration: none;
+
+}
+
+body {
+  margin: 0;
+  background: hsl(0, 0%, 100%);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 1000;
+  background: rgb(255, 255, 255);
+  padding-bottom: 8px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background: #ff2222;
+  text-align: left;
+  padding-top: 2em;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/*.btn.*/
+
+.btn {
+  text-decoration: none;
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #ff2222;
+  border-radius: 0.6em;
+  color: #ff2222;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 10px;
+  padding: 0.5em 1.0em;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+.btn>a {
+  text-decoration: none;
+  color: #ff2222;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffff;
+  outline: 0;
+}
+
+.first {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover {
+  box-shadow: 0 0 40px 40px #ff2222 inset;
+}
+ 
+.table-al {
+  border-collapse: collapse;
+  
+}
+
+/* view home.php */
+
+.welcome{
+  margin-left: 10%;
+}
+
+/* input */ 
+
+input[type=text] {
+  padding: 10px;
+}
+
+input[type=date] {
+  padding: 10px 40px;
+}
+
+select{
+  padding: 10px 45px;
+}

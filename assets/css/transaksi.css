@@ -1,0 +1,90 @@
+.btn-bayar,
+.btn-cetak {
+    display: inline-flex;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+    cursor: pointer;
+    padding: 8px 15px;
+    align-self: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.btn-bayar {
+    border: 2px solid #FF5F00;
+    color: #FF5F00;
+}
+
+.btn-cetak {
+    border: 2px solid #00092C;
+    color: #00092C;
+}
+
+
+
+.btn-bayar:hover,
+.btn-bayar:focus {
+    color: #ffff;
+    outline: 0;
+    background-color: #FF5F00;
+}
+
+.btn-cetak:hover,
+.btn-cetak:focus {
+    color: #ffff;
+    outline: 0;
+    background-color: #00092C;
+}
+
+.formbayar{
+    display: block;
+    position: relative ;
+}
+
+.btn-byr{
+    position: relative;
+    display: inline-flex;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+    cursor: pointer;
+    padding: 8px 15px;
+    align-self: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    border: 2px solid #ff2222;
+    color: #ff2222;
+
+}
+
+.btn-byr:hover,
+.btn-byr:focus {
+    color: #ffff;
+    outline: 0;
+    background-color: #ff2222;
+}
+
+input[type=text] {
+    padding: 10px;
+}
+
+input[type=date] {
+    padding: 10px 40px;
+}

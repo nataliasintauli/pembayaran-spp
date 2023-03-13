@@ -1,0 +1,163 @@
+.table {
+  color: #444;
+  border-collapse: collapse;
+  width: 90%;
+  border: 1px solid #f5f5f5;
+  margin-bottom: 40px;
+}
+
+.table tr th {
+  background: #ff2222;
+  color: #fff;
+  font-weight: normal;
+}
+
+.table,
+th,
+td {
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.aksi {
+  width: 20%;
+}
+
+.btn-edit {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #FF5F00;
+  border-radius: 0.6em;
+  color: #FF5F00;
+  cursor: pointer;
+  align-self: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 5px;
+  padding: 0.2em 1em;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+.btn-hapus {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #00092C;
+  border-radius: 0.6em;
+  color: #00092C;
+  cursor: pointer;
+  align-self: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 5px;
+  padding: 0.2em 1em;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+
+.btn-edit:hover,
+.btn-edit:focus {
+  color: #ffff;
+  outline: 0;
+  background-color: #FF5F00;
+}
+
+.btn-hapus:hover,
+.btn-hapus:focus {
+  color: #ffff;
+  outline: 0;
+  background-color: #00092C;
+}
+
+
+.h3{
+  margin-left: 10%;
+}
+
+
+.btn-print {
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #FF5F00;
+  border-radius: 0.6em;
+  color: #FF5F00;
+  cursor: pointer;
+  align-self: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 5px;
+  padding: 0.8em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+.btn-print:hover,
+.btn-print:focus {
+  color: #ffff;
+  outline: 0;
+  background-color: #FF5F00;
+}
+
+.btn-tanggal {
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #ff2222;
+  border-radius: 0.6em;
+  color: #ff2222;
+  cursor: pointer;
+  align-self: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 5px;
+  padding: 0.2em 1em;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+.btn-tanggal:hover,
+.btn-tanggal:focus {
+  color: #ffff;
+  outline: 0;
+  background-color: #ff2222;
+}
+
+
