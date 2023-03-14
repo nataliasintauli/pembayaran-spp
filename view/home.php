@@ -16,6 +16,9 @@ include "../template/navbar.php";
 <body>
 <br><br><br><br><br><br>
 
-    <h1 class="welcome">Selamat Datang di Website Pembayaran SPP</h1>
+<center>
+    <h1>Selamat Datang di Website Pembayaran SPP</h1>
+    <p>Gunakan navigation bar diatas untuk mengganti halaman</p>
+</center>
 </body>
 </html>
