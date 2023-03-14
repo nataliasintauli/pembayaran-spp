@@ -1,9 +1,7 @@
 <?php
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
 
 if (isset($_GET['tanggal_mulai']) && ($_GET['tanggal_selesai'])) {
     $tanggal_mulai = $_GET['tanggal_mulai'];
@@ -16,7 +14,7 @@ if (isset($_GET['tanggal_mulai']) && ($_GET['tanggal_selesai'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LAPORAN PEMASUKAN PER TANGGAL | SPP</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/table.css">
 </head>

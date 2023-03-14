@@ -1,10 +1,7 @@
 <?php
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
-include "../koneksi.php";
 
 $id = $_GET['nis'];
 
@@ -20,6 +17,7 @@ while ($data = mysqli_fetch_assoc($result))
 
 <head>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <title>EDIT DATA SISWA | SPP</title>
 </head>
 <br><br><br><br><br><br>
 <center>

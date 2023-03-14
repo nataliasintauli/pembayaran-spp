@@ -1,9 +1,7 @@
 <?php
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
 error_reporting(0);
 
 ?>
@@ -15,10 +13,10 @@ error_reporting(0);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transaksi SPP</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/transaksi.css">
     <link rel="stylesheet" href="../assets/css/table.css">
+    <title>PEMBAYARAN | SPP</title>
 </head>
 
 <body>
@@ -125,13 +123,12 @@ error_reporting(0);
                             '12' => 'Desember',
                         ];
 
-                        for ($i = 1; $i < 13; $i++) {
+                        for ($i = 1; $i < 37; $i++) {
                             $jatuhtempo = date("Y-m-d", strtotime("+$i month", strtotime($awaltempo)));
                             $tahun_now = $dta['angkatan'];
 
                             $bulan = $bulanIndo[date('m', strtotime($jatuhtempo))];
-                            $hasil_bulan = mysqli_query($koneksi, "SELECT * FROM tb_transaksi WHERE bulan='$bulan' AND nis='$nis'");
-                            $data_bulan = mysqli_fetch_assoc($hasil_bulan);
+
                         ?>
                             <tr>
                                 <td><?= $i ?></td>
@@ -139,12 +136,20 @@ error_reporting(0);
                                 <td>
                                     <?php
                                     if ($i < 7) {
-                                        echo $tahun_now;
-                                    } else {
-                                        echo $tahun_now + 1;
+                                        echo $tahun_angkatan = $tahun_now;
+                                    } elseif($i < 19 && $i > 6) {
+                                        echo $tahun_angkatan = $tahun_now + 1;
+                                    } elseif($i < 31 && $i > 17) {
+                                        echo $tahun_angkatan = $tahun_now + 2;
+                                    } elseif($i < 37 && $i > 30) {
+                                        echo $tahun_angkatan = $tahun_now + 3;
                                     }
                                     ?>
                                 </td>
+                                <?php
+                                 $hasil_bulan = mysqli_query($koneksi, "SELECT * FROM tb_transaksi WHERE bulan='$bulan' AND nis='$nis' AND tahun='$tahun_angkatan'");
+                                 $data_bulan = mysqli_fetch_assoc($hasil_bulan);
+                                ?>
                                 <td class="jatuh-tempo">
                                     10-<?= $bulanIndo[date('m', strtotime("+$i month", strtotime($awaltempo)))]; ?>
                                 </td>
@@ -156,7 +161,7 @@ error_reporting(0);
                                     $cek_bulan = mysqli_num_rows($hasil_bulan);
                                     if (!$cek_bulan > 0) {
                                     ?>
-                                        <a class="btn-bayar" href="../transaksi/transaksi-bayar.php?bulan=<?= $bulan ?>&nis=<?= $nis ?>&tahun=<?= $tahun_now; ?>">
+                                        <a class="btn-bayar" href="../transaksi/transaksi-bayar.php?bulan=<?= $bulan ?>&nis=<?= $nis ?>&tahun=<?= $tahun_angkatan; ?>">
                                             Bayar</a>
                                     <?php
                                     } else {

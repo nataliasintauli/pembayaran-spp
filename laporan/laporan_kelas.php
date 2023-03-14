@@ -1,12 +1,11 @@
 <?php
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
 
 $bulan = $_GET['bulan'];
 $kelas = $_GET['kelas'];
+$tahun = $_GET['tahun'];
 $query = "SELECT * FROM tb_siswa WHERE kelas='$kelas'";
 error_reporting(0);
 ?>
@@ -17,7 +16,7 @@ error_reporting(0);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LAPORAN KELAS | SPP</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/table.css">
 </head>
@@ -36,6 +35,7 @@ error_reporting(0);
                 <th>Nama</th>
                 <th>Tanggal Bayar</th>
                 <th>Bulan</th>
+                <th>Tahun</th>
                 <th>Status</th>
                 <th>Jumlah</th>
             </tr>
@@ -61,6 +61,7 @@ error_reporting(0);
                     ?>
                 </td>
                 <td><?=$bulan?></td>
+                <td><?=$tahun?></td>
                 <td>
                     <?php
                     if(@$row_bulan){

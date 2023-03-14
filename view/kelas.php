@@ -1,9 +1,7 @@
 <?php
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
 
 ?>
 <html>
@@ -11,7 +9,7 @@ include "../template/footer.php";
 <head>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/table.css">
-    <title>DATA KELAS | SISTEM PEMBAYARAN SPP</title>
+    <title>DATA KELAS | SPP</title>
 </head>
 
 <body>
@@ -39,7 +37,7 @@ include "../template/footer.php";
             <td><?= $data['jurusan']; ?> </td>
             <td class="aksi" align="center">
                 <a href="../kelas/kelas-edit.php?kelas=<?= $data['kelas']; ?>" class="btn-edit">EDIT</a>
-                <a href="../kelas/kelas-hapus.php?kelas=<?=  $data['kelas']; ?>" class="btn-hapus">HAPUS</a>
+                <!-- <a href="../kelas/kelas-hapus.php?kelas=<?=  $data['kelas']; ?>" class="btn-hapus">HAPUS</a> -->
         </tr>
         <?php
     } ?>

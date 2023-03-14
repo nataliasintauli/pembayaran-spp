@@ -1,14 +1,13 @@
 <?php
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
 ?>
 
 <html>
 
 <head>
+<title>TAMBAH DATA KELAS | SPP</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 <br><br><br><br><br><br>

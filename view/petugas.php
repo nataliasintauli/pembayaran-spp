@@ -1,9 +1,7 @@
 <?php
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
 
 ?>
 <html>
@@ -12,6 +10,7 @@ include "../template/footer.php";
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/table.css">
     <link rel="stylesheet" href="../assets/css/form.css">
+    <title>DATA PETUGAS | SPP</title>
 </head>
 
 <body>
@@ -28,6 +27,7 @@ include "../template/footer.php";
             <th>Username</th>
             <th>Password</th>
             <th>Nama</th>
+            <th>Level</th>
             <th>No Telp</th>
             <th>Alamat</th>
             <th>Aksi</th>
@@ -44,6 +44,7 @@ include "../template/footer.php";
             <td><?= $data['username']; ?></td>
             <td><?= $data['password']; ?></td>
             <td><?= $data['nama']; ?></td>
+            <td><?= $data['level']; ?></td>            
             <td><?= $data['telp']; ?></td>
             <td><?= $data['alamat']; ?></td>
             <td class="aksi" align="center">

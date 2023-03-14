@@ -1,14 +1,14 @@
 <?php
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
-include "../koneksi.php";
 ?>
 
 
+<head>
+    <title>TAMBAH DATA SISWA | SPP</title>
 
+</head>
 
     <br><br><br><br><br><br>
     <center>

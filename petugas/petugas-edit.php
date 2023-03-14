@@ -1,9 +1,7 @@
 <?php 
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
 
 $id = $_GET['idpetugas'];
 
@@ -17,6 +15,7 @@ while ($data = mysqli_fetch_assoc($result))
 ?>
 
 <head>
+<title>EDIT DATA SPP | SPP</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 </head>
@@ -30,6 +29,13 @@ while ($data = mysqli_fetch_assoc($result))
         <input type="text" name="password" value="<?php echo $data['password'] ?>"><br><br>
         <label>Nama :</label><br>
         <input type="text" name="nama" value="<?php echo $data['nama'] ?>"><br><br>
+        <label>Level User :</label><br>
+        <select class="costum-select" name="level">
+                <option selected hidden value="<?= $data['level']; ?>"><?= $data ['level']; ?></option>
+                <option value="admin">admin</option>
+                <option value="petugas">petugas</option>
+        </select><br><br>
+
         <label>No Telp :</label><br>
         <input type="text" name="telp" value="<?php echo $data['telp'] ?>"><br><br>
         <label>Alamat :</label><br>

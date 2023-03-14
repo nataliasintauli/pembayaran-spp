@@ -1,10 +1,7 @@
 <?php
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
-include "../koneksi.php";
 
 $id = $_GET['angkatan'];
 
@@ -19,6 +16,7 @@ while ($data = mysqli_fetch_assoc($result)) {
 <html>
 
 <head>
+    <title>EDIT DATA SPP | SPP</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 <br><br><br><br><br><br>

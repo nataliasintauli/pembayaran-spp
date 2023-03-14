@@ -1,18 +1,13 @@
 <?php
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
-
 ?>
-<html>
 
-<head>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/table.css">
+    <title>LAPORAN | SPP</title>
 
-</head>
 
 <body>
     <br><br><br><br><br>
@@ -71,6 +66,17 @@ include "../template/footer.php";
                         <option value="Juni">Juni</option>
                     </select>
             </td>
+            <td>
+                Tahun
+                    <select name="tahun">
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+            </td>
+
             <td>
                 <button type="submit" class="btn-tanggal" name="tampil">Tampilkan</button>
             </td>

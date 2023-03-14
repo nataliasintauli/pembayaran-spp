@@ -1,16 +1,15 @@
 <?php
 session_start();
 require "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
-
 ?>
 <html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/table.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/table.css">    
+    <title>HISTORY PEMBAYARAN | SPP</title>
+
 </head>
 
 <body>

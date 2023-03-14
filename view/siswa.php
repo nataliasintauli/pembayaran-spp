@@ -1,9 +1,7 @@
 <?php
 session_start();
 include "../koneksi.php";
-include "../template/header.php";
 include "../template/navbar.php";
-include "../template/footer.php";
 
 ?>
 <html>
@@ -11,6 +9,7 @@ include "../template/footer.php";
 <head>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/table.css">
+    <title>DATA SISWA | SPP</title>
 </head>
 
 <body>
