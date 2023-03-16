@@ -23,7 +23,7 @@ error_reporting(0);
 <body>
 <br><br><br><br><br><br><br><br>
 <center>
-        <a class="btn-print" href="../laporan/printkelas.php?kelas=<?= $kelas; ?>&bulan=<?= $bulan ?>">
+        <a class="btn-print" href="../laporan/printkelas.php?kelas=<?= $kelas; ?>&bulan=<?= $bulan ?>&tahun=<?= $tahun ?>">
             Cetak
         </a>
     </center>

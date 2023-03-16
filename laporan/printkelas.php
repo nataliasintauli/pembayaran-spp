@@ -4,7 +4,7 @@ require "../koneksi.php";
 
 $bulan = $_GET['bulan'];
 $kelas = $_GET['kelas'];
-$query = "SELECT * FROM tb_siswa WHERE kelas='$kelas'";
+$tahun = $_GET['tahun'];
 $query = "SELECT * FROM tb_siswa WHERE kelas='$kelas'";
 ?>
 <!DOCTYPE html>
@@ -23,6 +23,7 @@ $query = "SELECT * FROM tb_siswa WHERE kelas='$kelas'";
     <hr>
     <p>Kelas : <?php echo $kelas; ?></p>
     <p>Bulan : <?php echo $bulan; ?></p>
+    <p>Tahun : <?php echo $tahun; ?></p>
     <table border=" 1" width="60%" align="center" class="table">
         <thead>
             <tr>
