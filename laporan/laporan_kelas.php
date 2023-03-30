@@ -6,6 +6,7 @@ include "../template/navbar.php";
 $bulan = $_GET['bulan'];
 $kelas = $_GET['kelas'];
 $tahun = $_GET['tahun'];
+$angkatan = $_GET['angkatan'];
 $query = "SELECT * FROM tb_siswa WHERE kelas='$kelas'";
 error_reporting(0);
 ?>
@@ -23,7 +24,7 @@ error_reporting(0);
 <body>
 <br><br><br><br><br><br><br><br>
 <center>
-        <a class="btn-print" href="../laporan/printkelas.php?kelas=<?= $kelas; ?>&bulan=<?= $bulan ?>&tahun=<?= $tahun ?>">
+        <a class="btn-print" href="../laporan/printkelas.php?kelas=<?= $kelas; ?>&bulan=<?= $bulan ?>&tahun=<?= $tahun ?> &angkatan=<?= $angkatan ?>">
             Cetak
         </a>
     </center>

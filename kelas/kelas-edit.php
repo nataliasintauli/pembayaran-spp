@@ -23,7 +23,7 @@ while ($data = mysqli_fetch_assoc($result))
 </head>
 <br><br><br><br><br><br>
 <center>
-    <h1>Edit Data SPP</h1>
+    <h1>Edit Data Kelas</h1>
     <form action="proses-kelas-edit.php" method="POST">
         <label>Nama Kelas :</label><br>
         <input type="text" name="kelas" value="<?php echo $data['kelas'] ?>"><br><br>

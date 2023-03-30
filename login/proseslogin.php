@@ -22,7 +22,7 @@ if (mysqli_num_rows($queryadmin) > 0)
     $_SESSION['idpetugas'] = $data['idpetugas'];
     $_SESSION['username'] = $data['username'];
     $_SESSION['level'] = $data['level'];
-    echo "<script>alert('berhasil login');window.location = '../view/pembayaran.php';</script>";
+    echo "<script>alert('berhasil login');window.location = '../view/home.php';</script>";
 } elseif (mysqli_num_rows($querysiswa) > 0 ) 
 {
     $data = mysqli_fetch_assoc($querysiswa);
@@ -30,7 +30,7 @@ if (mysqli_num_rows($queryadmin) > 0)
     $_SESSION['username'] = $data['username'];
     $_SESSION['password'] = $data['password'];
     $_SESSION['level'] = 'siswa';
-    echo "<script>alert('berhasil login');window.location = '../view/pembayaran.php';</script>";   
+    echo "<script>alert('berhasil login');window.location = '../view/home.php';</script>";   
 } else {
     echo "<script>alert('gagal login');window.location = 'login.php';</script>";
 }

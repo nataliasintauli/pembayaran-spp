@@ -5,6 +5,7 @@ require "../koneksi.php";
 $bulan = $_GET['bulan'];
 $kelas = $_GET['kelas'];
 $tahun = $_GET['tahun'];
+$angkatan = $_GET['angkatan'];
 $query = "SELECT * FROM tb_siswa WHERE kelas='$kelas'";
 ?>
 <!DOCTYPE html>
@@ -14,16 +15,42 @@ $query = "SELECT * FROM tb_siswa WHERE kelas='$kelas'";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CETAK LAPORAN | SPP</title>
     <link rel="stylesheet" href="../assets/css/print.css">
 </head>
 
 <body>
     <h2 class="kop">LAPORAN PEMBAYARAN SPP</h2>
     <hr>
-    <p>Kelas : <?php echo $kelas; ?></p>
-    <p>Bulan : <?php echo $bulan; ?></p>
-    <p>Tahun : <?php echo $tahun; ?></p>
+
+<table>
+    <tr>
+    <td>Kelas</td>
+    <td>:</td>
+    <td><?php echo $kelas; ?></td>
+    </tr>    
+    
+    <tr>
+    <td>Angkatan</td>
+    <td>:</td>
+    <td><?php echo $angkatan; ?></td>
+    </tr>    
+    
+    <tr>
+    <td>Bulan</td>
+    <td>:</td>
+    <td><?php echo $bulan; ?></td>
+    </tr>
+
+    <tr>
+    <td>Tahun</td>
+    <td>:</td>
+    <td><?php echo $tahun; ?></td>
+    </tr>
+
+</table>
+
+
     <table border=" 1" width="60%" align="center" class="table">
         <thead>
             <tr>

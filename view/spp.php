@@ -36,7 +36,7 @@ include "../template/navbar.php";
             <td><?= $data['biaya']; ?> </td>
             <td class="aksi" align="center">
                 <a href="../spp/spp-edit.php?angkatan=<?= $data['angkatan']; ?>" class="btn-edit">EDIT</a>
-                <a href="../spp/spp-hapus.php?angkatan=<?= $data['angkatan']; ?>" class="btn-hapus">HAPUS</a>
+                <!-- <a href="../spp/spp-hapus.php?angkatan=<?= $data['angkatan']; ?>" class="btn-hapus">HAPUS</a> -->
         </tr>
         <?php
         } ?>

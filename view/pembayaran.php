@@ -33,6 +33,7 @@ include "../template/navbar.php";
             <th>ID Petugas</th>
         </tr>
 
+    
         <?php
                 if ($_SESSION['level'] == 'admin' || $_SESSION['level'] == 'petugas') {
                     $query = mysqli_query($koneksi, "SELECT * FROM tb_transaksi");

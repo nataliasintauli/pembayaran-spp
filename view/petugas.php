@@ -49,7 +49,7 @@ include "../template/navbar.php";
             <td><?= $data['alamat']; ?></td>
             <td class="aksi" align="center">
                 <a href="../petugas/petugas-edit.php?idpetugas=<?= $data['idpetugas']; ?>" class="btn-edit">EDIT</a>
-                <a href="../petugas-hapus.php?idpetugas=<?=  $data['idpetugas']; ?>" class="btn-hapus">HAPUS</a>
+                <a href="../petugas/petugas-hapus.php?idpetugas=<?=  $data['idpetugas']; ?>" class="btn-hapus">HAPUS</a>
         </tr>
         <?php
     } ?>
