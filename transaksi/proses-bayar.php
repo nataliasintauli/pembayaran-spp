@@ -11,8 +11,6 @@ $jumlah = $_POST['jumlah'];
 $ket = "Lunas";
 $angkatan = $_POST['angkatan'];
 
-var_dump($idpetugas);
-
 $hasil = mysqli_query($koneksi, "INSERT INTO tb_transaksi (idpetugas,nis,tglbayar,bulan,tahun,ket,jumlah,angkatan) 
 VALUES ('$idpetugas','$nis','$tglbayar','$bulan','$tahun','$ket','$jumlah','$angkatan')");
 
